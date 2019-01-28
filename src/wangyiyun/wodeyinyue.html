@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	margin: 0px;
+	height: 100px;
+}
+
+.tou {
+	width: 100%;
+	height: 70px;
+	background-color: #333;
+	line-height: center;
+	position:fixed;
+	z-index:1;
+}
+
+.tou>span {
+	position: relative;
+}
+
+.logo>img {
+	float: left;
+	width: 160px;
+	height: 69px;
+	padding-left: 120px;
+	padding-right: 17px;
+	position: relative;
+}
+
+.tou>span>a {
+	float: left;
+	weight: =56px;
+	height: 70px;
+	font-size: 14px;
+	color: #ccc;
+	outline: none;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 19px 0px 19px;
+}
+
+.tou>span>a>p {
+	weight: =56px;
+	height: 70px;
+	margin: 0px;
+	line-height: 70px;
+}
+
+.srchbg {
+	float: left;
+	width: 158px;
+	height: 32px;
+	background-color: white;
+	border-radius: 18px 18px 18px 18px;
+	position: relative;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+.ph {
+	top: 0;
+	width: 138px;
+	color: #9b9b9b;
+	cursor: text;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	margin-top: 8px;
+}
+
+#wenhao {
+	margin-top: 6px;
+}
+
+#chuangzuo {
+	float: left;
+	width: 90px;
+	height: 32px;
+	margin: 19px 0 0 12px;
+	box-sizing: border-box;
+	padding-left: 16px;
+	border: 1px solid #4F4F4F;
+	background-position: 0 -140px;
+	line-height: 33px;
+	color: #ccc;
+	border-radius: 20px;
+	position: relative;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.hongxian {
+	height: 5px;
+	border-bottom: none;
+	box-sizing: border-box;
+	background-color: #C20C0C;
+	position: relative;
+	zoom: 1;
+	display: block;
+	word-break: break-word;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 70px;
+}
+
+.g-mymusic {
+	height: 100%;
+	width: 100%; 
+	overflow-x : hidden;
+	overflow-y: scroll;
+	position: relative;
+	zoom: 1;
+	display: block;
+	word-break: break-word;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	top: 75px;
+}
+
+.g-sd3u-scrolln-musicsdf-prj-flag {
+	width: 240px;
+	height: 100%;
+	float: left;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	float: left;
+	width: 240px;
+	position: fixed;
+	zoom: 1;
+	display: block;
+	word-break: break-word;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.f-ff1 {
+	width: 215px;
+	height: 18.66px;
+	padding: 0 10px 0px 15px;
+	font-size: 14px;
+	color: #000;
+	font-family: simsun, \5b8b\4f53;
+	margin: 0;
+	display: block;
+	font-weight: bold;
+	word-break: break-word;
+}
+
+.f-ff1>i {
+	display: inline-block;
+	line-height: 22px;
+	overflow: hidden;
+	padding-left: 20px;
+	color: #515151;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.j-iflag {
+	position: relative;
+	zoom: 1;
+	width: 220px; height : 42px;
+	padding: 6px 0 6px 20px;
+	cursor: pointer;
+	vertical-align: middle;
+	list-style: none;
+	margin: 0;
+	display: list-item;
+	text-align: -webkit-match-parent;
+	word-break: break-word;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 42px;
+}
+
+.namef-thide {
+	margin: 0px;
+}
+
+.j-flagf-cb {
+	width: 240px;
+	height: 54px;
+	padding-left: 0px;
+}
+
+.g-bd3p-mymusicf-cb {
+	width: 980px;
+	margin: 0 auto;
+	border: 1px solid #d3d3d3;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+}
+
+#auto-id-EtTGxzzXEDzVEBnk {
+	display: block;
+	word-break: break-word;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+}
+
+.j-iflagz-selected {
+	width: 240px;
+	height: 42px;
+	background: #e6e6e6;
+	position: relative;
+	zoom: 1;
+	padding: 6px 0 6px 20px;
+	list-style: none;
+	margin: 0;
+	display: list-item;
+	text-align: -webkit-match-parent;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+
+.itemf-cb {
+	width: 170px;
+	height: 50.66px;
+	position: relative;
+	display: block;
+	list-style: none;
+	font-size: 12px;
+	float: left;
+}
+
+.namef-thide {
+	display: block;
+	width: 220px;
+	height: 16px;
+	list-style: none;
+	text-align: -webkit-match-parent;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+.s-fc0 {
+	width: 133.33px;
+	height: 15.56px;
+	list-style: none;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	text-decoration: none;
+}
+
+.s-fc4f-thidenum {
+	width: 130px;
+	height: 21.3px;
+	color: #999;
+}
+
+.tritri1 {
+	border-color: #ccc transparent transparent;
+	border-style: solid dashed dashed;
+	border-width: 8px 7px 0;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 2px 0 5px;
+	cursor: pointer;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	font-style: normal;
+	text-align: left;
+}
+
+.rtitle {
+	font-size: 14px;
+	color: #000;
+}
+
+.u-btnu-btn-crtf-frj-flag {
+	width: 52px;
+	height: 22px;
+	display: inline-block;
+	float: right;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	color: #333;
+	font-size: 14px;
+}
+
+.f-cbj-flag {
+	width: 100%;
+	padding: 0px;
+}
+
+.g-mn3f-prj-flag {
+	width: 740px;
+	height: 100%;
+	float: right;
+	padding-bottom: 50px;
+	position: relative;
+	zoom: 1;
+	display: block;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.g-wrap {
+	width: 660px;
+	height: 200px;
+	padding: 40px;
+	display: block;
+}
+
+.flag_cover {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.m-infof-cb {
+	width: 660px;
+	height: 200px;
+	display: block;
+	position: relative;
+}
+
+.msk {
+	width: 208px;
+	height: 208px;
+	background-position: 0 -1285px;
+	top: -4px;
+	left: -4px;
+}
+
+.cnt {
+	float: right;
+	width: 100%;
+	height: 0px;
+	position: absolute;
+}
+
+.cntcm-info {
+	width: 430px;
+	height: 122px;
+	margin-left: 230px;
+	margin-top: -203px;
+}
+
+.hdf-cb {
+	width: 430px;
+	height: 24px;
+	position: relative;
+	margin: 0 0 12px;
+	line-height: 24px;
+}
+
+.typeu-icnu-icn-13 {
+	width: 58px;
+	height: 24px;
+	position: relative;
+	top: 3px;
+	float: left;
+	margin-right: 6px;
+	background-position: 0 -243px;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.f-ff2f-thide {
+	width: 370px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 20px;
+	font-weight: normal;
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+}
+
+.userf-cb {
+	width: 430p;
+	height: 35px;
+	margin: 0 0 20px;
+	line-height: 35px;
+}
+
+.face>img {
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	float: left;
+}
+
+.namef-thide {
+	width: 73.5px;
+	height: 35px;
+	float: left;
+	line-height: 35px;
+}
+
+.s-fc7 {
+	color: #0c73c2;
+	cursor: pointer;
+	text-decoration: none;
+	line-height: 35px;
+}
+
+.times-fc4 {
+	margin-left: 15px;
+	color: #999;
+}
+
+.btnsf-cb {
+	width: 440px;
+	height: 31px;
+	margin-bottom: 25px;
+	margin-right: -10px;
+	display: block;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.u-btn2u-btn2-2u-btni-addplyf-fl {
+	width: 54px;
+	height: 31px;
+	float: left;
+	background-position: right -428px;
+	text-decoration: none;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.u-btniu-btni-add {
+	width: 31px;
+	height: 31px;
+	margin-right: 5px;
+	font-family: simsun, \5b8b\4f53;
+	margin-left: -3px;
+	padding-right: 0;
+	background-position: 0 -1588px;
+	float: left;
+}
+
+.u-btniu-btni-add>input {
+	height: 23px;
+}
+
+.u-btniu-btni-favu-btni-fav-dis {
+	width: 54px;
+	height: 31px;
+	margin-right: 6px;
+	margin-top: -2px;
+	font-family: simsun, \5b8b\4f53;
+	padding: 0 5px 0 0;
+	white-space: nowrap;
+	float: left;
+	line-height: 30px;
+	min-width: 23px;
+	text-decoration: none;
+	color: #999;
+}
+
+.u-btniu-btni-share {
+	width: 54px;
+	height: 31px;
+	margin-right: 6px;
+	margin-top: -2px; font-family : simsun, \5b8b\4f53;
+	background-position: right -1020px;
+	color: #333;
+	text-decoration: none;
+	padding: 0 5px 0 0;
+	white-space: nowrap;
+	float: left;
+	line-height: 30px;
+	min-width: 23px;
+	cursor: pointer;
+	font-family: simsun, \5b8b\4f53;
+}
+
+.u-btniu-btni-dl {
+	width: 54px;
+	height: 31px;
+	margin-top: -2px;
+	margin-right: 6px;
+	font-family: simsun, \5b8b\4f53;
+	background-position: right -1020px;
+	color: #333;
+	text-decoration: none;
+	padding: 0 5px 0 0;
+	white-space: nowrap;
+	float: left;
+	line-height: 30px;
+	min-width: 23px;
+	cursor: pointer;
+}
+
+.u-titleu-title-1f-cb {
+	width: 698px;
+	height: 33px;
+	padding: 0 10px 0 32px;
+	border-bottom: 2px solid #c20c0c;
+	display: block;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.f-ff2 {
+	font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+	float: left;
+	font-weight: normal;
+}
+
+.subs-fc3 {
+	width: 30.68px;
+	height: 16px;
+	margin: 9px 0 0 20px;
+	float: left;
+	color: #666;
+}
+
+.mores-fc3 {
+	width: 54.68px;
+	height: 16px;
+	margin-top: 5px;
+	float: right;
+	color: #666;
+	display: block;
+}
+
+.m-table {
+	background-color: #f7f7f7;
+}
+
+.j-flag {
+	background-color: #f7f7f7;
+}
+
+.wp {
+	width: 54px;
+	height: 18px;
+	background: none;
+	line-height: 18px;
+	padding: 8px 10px;
+	margin: 0px;
+}
+
+.wpaf0 {
+	width: 283px;
+	height: 18px;
+	line-height: 18px;
+	padding: 8px 10px 8px 0px;
+	background-position: 0 -56px;
+	display: block;
+	text-align: left;
+	font-weight: normal;
+	color: #666;
+}
+
+.wpaf0>p {
+	margin: 0px;
+}
+
+.wpaf1 {
+	width: 91px;
+	height: 18px;
+	line-height: 18px;
+	padding: 8px 10px 8px 0px;
+	background-position: 0 -56px;
+	display: block;
+	text-align: left;
+	font-weight: normal;
+	color: #666;
+}
+
+.wpaf1>p {
+	margin: 0px;
+}
+
+.wpaf2 {
+	width: 91px;
+	height: 18px;
+	line-height: 18px;
+	padding: 8px 10px 8px 0px;
+	background-position: 0 -56px;
+	display: block;
+	text-align: left;
+	font-weight: normal;
+	color: #666;
+}
+
+.wpaf2>p {
+	margin: 0px;
+}
+
+.wpaf3 {
+	width: 91px;
+	height: 18px;
+	line-height: 18px;
+	padding: 8px 10px 8px 0px;
+	background-position: 0 -56px;
+	display: block;
+	text-align: left;
+	font-weight: normal;
+	color: #666;
+}
+
+.wpaf3>p {
+	margin: 0px;
+}
+
+.hd {
+	width: 54px;
+	height: 18px;
+	display: block;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.plyply-z-slt {
+	width: 17px;
+	height: 17px;
+	float: right;
+	cursor: pointer;
+	background-position: 0 -103px;
+	line-height: 18px;
+	text-align: left;
+}
+
+.num>img {
+	width: 18px;
+	height: 18px;
+	float: right;
+}
+
+.gqbt {
+	
+}
+
+.ttc {
+	width: 263px;
+	height: 18px;
+	margin-right: 20px;
+	display: block;
+	line-height: 18px;
+	text-align: left;
+}
+
+.txt>a {
+	font-weight: normal; color : #333;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	color: #333;
+}
+
+.text>a {
+	font-weight: normal;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.text>span>a {
+	font-weight: normal;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.auto-id-ixLZXcR0Qnf3Z1J2 {
+	width: 100%;
+	height: 100%;
+}
+
+.u-titleu-title-1 {
+	width: 698px;
+	height: 33px;
+	padding: 0 10px 0 32px;
+	display: block;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: 2px solid #c20c0c;
+}
+
+.u-titleu-title-1>span {
+	width: 61px;
+	height: 18px;
+}
+
+.m-cmmt {
+	width: 100%;
+	height: 100%;
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-top: 20px;
+	display: block;
+}
+
+.u-txtareaj-flag {
+	height: 50px;
+	width: 600px;
+	margin: 0;
+	padding: 5px 6px 6px;
+	line-height: 19px;
+	font-size: 12px;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 5px;
+}
+
+.head {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: -10px;
+}
+
+.u-txtwrapholder-parentf-pr {
+	width: 740px;
+	height: 67px;
+}
+
+.btnsf-cbf-pr {
+	width: 614px;
+	height: 25px;
+	padding-top: 10px;
+	position: relative;
+	zoom: 1;
+}
+
+.icnu-icnu-icn-36j-flag {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin: 0px 10px 0 0;
+	cursor: pointer;
+	background-position: -40px -490px;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.icnu-icnu-icn-41j-flag {
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin: 0px 10px 0 0;
+	cursor: pointer;
+	background-position: -60px -490px;
+	font-style: normal;
+	font-size: inherit;
+}
+
+.zss-fc4j-flag {
+	width: 23px;
+	height: 25px;
+	float: right;
+	margin-right: 10px;
+	line-height: 25px;
+	color: #999;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnu-btnu-btn-1j-flag>input {
+	width: 46px;
+	height: 25px;
+	float: right;
+	background-position: -84px -64px;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+	display: inline-block;
+	background-color: blue;
+}
+.u-hd4{
+	width: 676px;
+	height: 20px;
+	position: relative;
+    top: 1px;
+    height: 20px;
+    border-bottom: 1px solid #cfcfcf;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+.itm{
+	width: 676px;
+	height: 53px;
+	padding: 15px 0;
+    border-top: 1px dotted #ccc;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cntwrap{
+	width: 616px;
+	height: 53px;
+	margin-left: 60px;
+}
+.cntf-brk{
+	height: 20px;
+	width: 100%;
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rp{
+	width: 100%;
+	height: 18px;
+	margin-top: 15px;
+    text-align: right;
+}
+.times-fc4{
+	width: 27px;
+	height: 18px;
+	float: left;
+    margin: 0 !important;
+    color: #999;
+    text-align: right;
+}
+.s-fc3{
+	color: #666;
+	text-decoration: none;
+	text-align: left;
+	font-size: 12px;
+
+}
+.s-fc4{
+	color: #666;
+	text-decoration: none;
+	text-align: left;
+	font-size: 12px;
+
+}
+</style>
+</head>
+<body>
+	<div class="tou" height=100%; width=100%;>
+		<a class="logo" href="/#"><img
+			src="imgs/QQ图片20190116194732(已去底).png"></a> <span><a
+			href="/#"><p>发现音乐</p> <sub class="cor">&nbsp;</sub></a></span> <span><a
+			href="/#"><p>我的音乐</p> <sub class="cor">&nbsp;</sub></a></span> <span><a
+			href="/#"><p>朋友</p> <sub class="cor">&nbsp;</sub></a></span> <span><a
+			href="/#"><p>商城</p> <sub class="cor">&nbsp;</sub></a></span> <span><a
+			href="/#"><p>音乐人</p> <sub class="cor">&nbsp;</sub></a></span> <span><a
+			href="/#"><p>下载客户端</p> <sub class="cor">&nbsp;</sub></a></span> <img
+			id="hot" src="imgs/QQ图片20190117185638_副本(已去底).png"
+			style="position: relative; top: 13px; left: -8px; float: left;">
+		<div class="srchbg">
+			<a href="/#"><img id="wenhao"
+				src="imgs/QQ图片20190118190422_副本.png"></a> <input class="ph"
+				type="text" style="border: none; background: none; outline: none;"
+				placeholder="音乐/视频/电台/用户">
+		</div>
+		<a id="chuangzuo" data-action="bilog" data-log-action="click"
+			data-log-json="{&quot;target&quot;:&quot;uploadvideo&quot;,&quot;page&quot;:&quot;homepage&quot;}"
+			href="/login?targetUrl=%2Fst/creator" target="_blank"
+			class="m-topvd f-pr m-creator-center">创作者中心</a>
+	<div class="hongxian"></div>
+	</div>
+	
+	<div id="g_mymusic" class="g-mymusic" style="height: 1244px;">
+		<div class="g-bd3p-mymusicf-cb" style="min-height: 1244px;">
+			<div class="g-sd3u-scrolln-musicsdf-prj-flag" style="height: 1244px;">
+				<div id="auto-id-EtTGxzzXEDzVEBnk">
+					<div class="n-minelstn-minelst-1">
+						<h2 class="f-ff1">
+							<a hidefocus="true" href="javascript:void(0);"
+								class="u-btnu-btn-crtf-frj-flag" data-action="create-playlist"><i>新建</i></a>
+							<span class="rtitle" data-action="spread"><i
+								class="tritri1"></i>创建的歌单(<span class="j-flag">1</span>)</span>
+						</h2>
+						<ul class="j-flagf-cb">
+							<li class="j-iflagz-selected" id="auto-id-dOx4T3ffS244wHRw"
+								data-matcher="playlist-2523724023"><div class="itemf-cb">
+									<div class="left">
+										<a hidefocus="true" class="avatar"><img
+											src="https://p2.music.126.net/gbp3eL_5BZWa1ATFxHmZ1g==/3429376768268061.jpg?param=40y40"
+											alt=""></a>
+									</div>
+									<p class="namef-thide">
+										<a hidefocus="true" href="javascript:void(0);" class="s-fc0"
+											title="我喜欢的音乐">我喜欢的音乐</a>
+									</p>
+									<p class="s-fc4f-thidenum">3首</p>
+								</div> <span class="operhshow" style="display: none;"></span></li>
+						</ul>
+					</div>
+					<div class="n-minelst n-minelst-1">
+						<h2 class="f-ff1">
+							<span class="rtitle" data-action="spread"><i
+								class="tritri1"></i>收藏的歌单(<span class="j-flag">1</span>)</span>
+						</h2>
+						<ul class="f-cbj-flag">
+							<li class="j-iflag" id="auto-id-sMvWlkvN01ltsX2o"
+								data-matcher="playlist-518508697"><div class="item f-cb">
+									<div class="left">
+										<a hidefocus="true" class="avatar"><img
+											src="https://p1.music.126.net/x0NPEPBeguKLNQ13yPU7kA==/18824738580552300.jpg?param=40y40"
+											alt=""></a>
+									</div>
+									<p class="name f-thide">
+										<a hidefocus="true" href="javascript:void(0);" class="s-fc0"
+											title="陈粒：民谣界唯一老公">陈粒：民谣界唯一老公</a>
+									</p>
+									<p class="s-fc4f-thidenum">44首&nbsp;by 淘漉音乐</p>
+								</div> <span class="operhshow" style="display: none;"><a
+									data-action="delete" hidefocus="true" title="删除"
+									href="javascript:void(0);" class="u-icnu-icn-11"></a></span></li>
+						</ul>
+					</div>
+					<div style="height: 100px;"></div>
+				</div>
+			</div>
+			<div class="g-mn3f-prj-flag">
+				<div class="f-pr">
+					<div class="j-flag" id="auto-id-JFVbVmixwHmCsG9U">
+						<div class="g-wrap">
+							<div class="m-infof-cb">
+								<div class="coveru-coveru-cover-dj">
+									<img id="flag_cover"
+										src="https://p2.music.126.net/gbp3eL_5BZWa1ATFxHmZ1g==/3429376768268061.jpg?param=200y200"><span
+										class="msk"></span>
+								</div>
+								<div class="cnt">
+									<div class="cntcm-info">
+										<div class="hdf-cb">
+											<i class="typeu-icnu-icn-13"><img
+												src="imgs/QQ图片20190119110826.png"></i>
+											<h2 class="f-ff2f-thide">我喜欢的音乐</h2>
+										</div>
+										<div class="userf-cb">
+											<a class="face" href="/user/home?id=1678894364"><img
+												src="http://p1.music.126.net/d2nWctg9ffhzacclvM9YvQ==/109951163680479224.jpg?param=200y200"></a><span
+												class="namef-thide"><a
+												href="/user/home?id=1678894364" class="s-fc7"
+												title="花落忆流年96">花落忆流年96</a></span><span class="times-fc4">2018-11-21&nbsp;创建</span>
+										</div>
+										<div class="btnsf-cb" id="flag_play_addto_btn_wrapper">
+											<a id="flag_play" href="/#"
+												class="u-btn2u-btn2-2u-btni-addplyf-fl" hidefocus="true"
+												title="播放" data-res-type="13" data-res-id="2523724023"
+												data-res-action="play"><input type="button" value="播放" /></a><a
+												href="javascript:;" class="u-btniu-btni-add"
+												hidefocus="true" title="添加到播放列表" data-res-type="13"
+												data-res-id="2523724023" data-res-action="addto"><input
+												type="button" value="+" /></a><a data-res-id="2523724023"
+												data-res-type="13" data-res-action="fav"
+												href="javascript:void(0)" hidefocus="true"
+												class="u-btniu-btni-favu-btni-fav-dis"><input
+												type="button" value="收藏" /></a><a id="flag_share"
+												data-res-id="2523724023" data-res-type="13"
+												data-res-action="share" data-res-name="我喜欢的音乐"
+												data-res-author="花落忆流年96"
+												data-res-pic="https://p2.music.126.net/gbp3eL_5BZWa1ATFxHmZ1g==/3429376768268061.jpg"
+												class="u-btniu-btni-share" href="javascript:void(0)"><input
+												type="button" value="分享" /></a><a id="flag_dl"
+												data-res-id="2523724023" data-res-type="13"
+												data-res-action="download" class="u-btniu-btni-dl"
+												href="javascript:void(0)"><input type="button"
+												value="下载" /></a><a id="flag_comment"
+												data-res-action="comment" href="javascript:;"
+												class="u-btniu-btni-cmmt"><input type="button"
+												value="评论" /></a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="u-titleu-title-1f-cb">
+							<h3>
+								<span class="f-ff2">歌曲列表</span>
+							</h3>
+							<span class="subs-fc3"><span id="flag_trackCount">3</span>首歌</span>
+							<div class="mores-fc3">
+								播放：<strong id="flag_playCount" class="s-fc6">0</strong>次
+							</div>
+						</div>
+					</div>
+					<div class="j-flag">
+						<div oncopy="returnfalse;" oncut="returnfalse;"
+							ondragstart="returnfalse;" id="auto-id-Zx2vGVHSx87JQHUI">
+							<div class="j-flag" id="auto-id-tXic6JPsha8fmSC3">
+								<table class="m-table ">
+									<thead>
+										<tr>
+											<th class="firstw1"><div class="wp">&nbsp;</div></th>
+											<th><div class="wpaf0">
+													<p>歌曲标题</p>
+												</div></th>
+											<th class="w2"><div class="wpaf1">
+													<p>时长</p>
+												</div></th>
+											<th class="w3"><div class="wpaf2">
+													<p>歌手</p>
+												</div></th>
+											<th class="w4"><div class="wpaf3">
+													<p>专辑</p>
+												</div></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr id="287931401547814034911" class="even ">
+											<td class="left"><div class="hd">
+													<span data-res-id="28793140" data-res-type="18"
+														data-res-action="play" data-res-from="13"
+														data-res-data="2523724023" class="plyply-z-slt">&nbsp;</span><span
+														class="num">1<img src="imgs/QQ图片20190119151836.png"></span>
+												</div></td>
+											<td class="gqbt""><div class="f-cb">
+													<div class="tt">
+														<div class="ttc">
+															<span class="txt"><a href="/song?id=28793140"><b
+																	title="半壶纱">半壶纱 </b></a><span data-res-id="28793140"
+																data-res-action="mv" title="播放mv" class="mv">MV</span></span>
+														</div>
+													</div>
+												</div></td>
+											<td class="s-fc3"><span class="u-durcandel">03:41</span>
+												<div class="opthshow">
+													<a class="u-icnu-icn-81icn-add" href="javascript:;"
+														title="添加到播放列表" hidefocus="true" data-res-type="18"
+														data-res-id="28793140" data-res-action="addto"
+														data-res-from="13" data-res-data="2523724023"></a><span
+														data-res-id="28793140" data-res-type="18"
+														data-res-action="fav" class="icn icn-fav" title="收藏"></span><span
+														data-res-id="28793140" data-res-type="18"
+														data-res-action="share" data-res-name="半壶纱"
+														data-res-author="刘珂矣"
+														data-res-pic="http://p1.music.126.net/SKujq5vqqv4KYOVFk7SiRA==/3407386538630284.jpg"
+														class="icn icn-share" title="分享"></span><span
+														data-res-id="28793140" data-res-type="18"
+														data-res-action="download" class="icn icn-dl" title="下载"></span><span
+														data-res-id="28793140" data-res-type="18"
+														data-res-action="delete" class="icn icn-del" title="删除"></span>
+												</div></td>
+											<td class=""><div class="text" title="刘珂矣">
+													<span title="刘珂矣"><a class=""
+														href="/artist?id=918054" hidefocus="true">刘珂矣
+															<div class="soil"></div>
+													</a></span>
+												</div></td>
+											<td class=""><div class="text">
+													<a href="/album?id=3286141" title="半壶纱">半壶纱
+														<div class="soil"></div>
+													</a>
+												</div></td>
+										</tr>
+										<tr id="305695611547814034911" class=" ">
+											<td class="left"><div class="hd">
+													<span data-res-id="30569561" data-res-type="18"
+														data-res-action="play" data-res-from="13"
+														data-res-data="2523724023" class="plyply-z-slt">&nbsp;</span><span
+														class="num">2<img src="imgs/QQ图片20190119151836.png"></span>
+												</div></td>
+											<td class="gqbt"><div class="f-cb">
+													<div class="tt">
+														<div class="ttc">
+															<span class="txt"><a href="/song?id=30569561"><b
+																	title="黯然销魂">黯然销魂
+																		<div class="soil"></div>
+																</b></a></span>
+														</div>
+													</div>
+												</div></td>
+											<td class=" s-fc3"><span class="u-durcandel">03:56</span>
+												<div class="opthshow">
+													<a class="u-icnu-icn-81icn-add" href="javascript:;"
+														title="添加到播放列表" hidefocus="true" data-res-type="18"
+														data-res-id="30569561" data-res-action="addto"
+														data-res-from="13" data-res-data="2523724023"></a><span
+														data-res-id="30569561" data-res-type="18"
+														data-res-action="fav" class="icn icn-fav" title="收藏"></span><span
+														data-res-id="30569561" data-res-type="18"
+														data-res-action="share" data-res-name="黯然销魂"
+														data-res-author="玄觞"
+														data-res-pic="http://p1.music.126.net/vGfQcJsYNKqsJXizn05iIQ==/2882919488804386.jpg"
+														class="icn icn-share" title="分享"></span><span
+														data-res-id="30569561" data-res-type="18"
+														data-res-action="download" class="icn icn-dl" title="下载"></span><span
+														data-res-id="30569561" data-res-type="18"
+														data-res-action="delete" class="icn icn-del" title="删除"></span>
+												</div></td>
+											<td class=""><div class="text" title="玄觞">
+													<span title="玄觞"><a class="" href="/artist?id=10142"
+														hidefocus="true">玄觞
+															<div class="soil"></div>
+													</a></span>
+												</div></td>
+											<td class=""><div class="text">
+													<a href="/album?id=3102684" title="黯然销魂">黯然销魂
+														<div class="soil"></div>
+													</a>
+												</div></td>
+										</tr>
+										<tr id="5745662071547814034911" class="even ">
+											<td class="left"><div class="hd ">
+													<span data-res-id="574566207" data-res-type="18"
+														data-res-action="play" data-res-from="13"
+														data-res-data="2523724023" class="plyply-z-slt">&nbsp;</span><span
+														class="num">3<img src="imgs/QQ图片20190119151836.png"></span>
+												</div></td>
+											<td class="gqbt"><div class="f-cb">
+													<div class="tt">
+														<div class="ttc">
+															<span class="txt"><a href="/song?id=574566207"><b
+																	title="盗将行">盗将行
+																		<div class="soil"></div>
+																</b></a></span>
+														</div>
+													</div>
+												</div></td>
+											<td class=" s-fc3"><span class="u-durcandel">03:18</span>
+												<div class="opthshow">
+													<a class="u-icnu-icn-81icn-add" href="javascript:;"
+														title="添加到播放列表" hidefocus="true" data-res-type="18"
+														data-res-id="574566207" data-res-action="addto"
+														data-res-from="13" data-res-data="2523724023"></a><span
+														data-res-id="574566207" data-res-type="18"
+														data-res-action="fav" class="icn icn-fav" title="收藏"></span><span
+														data-res-id="574566207" data-res-type="18"
+														data-res-action="share" data-res-name="盗将行"
+														data-res-author="花粥/马雨阳"
+														data-res-pic="http://p2.music.126.net/-qHPT3rhxDlu5zQV9NcQ-A==/109951163555860423.jpg"
+														class="icn icn-share" title="分享"></span><span
+														data-res-id="574566207" data-res-type="18"
+														data-res-action="download" class="icn icn-dl" title="下载"></span><span
+														data-res-id="574566207" data-res-type="18"
+														data-res-action="delete" class="icnicn-del" title="删除"></span>
+												</div></td>
+											<td class=""><div class="text" title="花粥/马雨阳">
+													<span title="花粥/马雨阳"><a class=""
+														href="/artist?id=8103" hidefocus="true">花粥
+															<div class="soil"></div>
+													</a>/<a class="" href="/artist?id=826336" hidefocus="true">马雨阳
+															<div class="soil"></div>
+													</a></span>
+												</div></td>
+											<td class=""><div class="text">
+													<a href="/album?id=39752444" title="粥请客（二）">粥请客（二）
+														<div class="soil"></div>
+													</a>
+												</div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="j-flag"></div>
+						</div>
+					</div>
+					<div class="j-flagf-mgt40">
+						<div id="auto-id-vz3qTdNEBzf5p83K">
+							<div class="u-titleu-title-1">
+								<h3>
+									<span class="f-ff2">评论</span>
+								</h3>
+								<span class="subs-fc3">共<span class="j-flag">0</span>条评论
+								</span>
+							</div>
+							<div class="m-cmmt">
+								<div class="iptarea">
+									<div class="head">
+										<img
+											src="http://p3.music.126.net/d2nWctg9ffhzacclvM9YvQ==/109951163680479224.jpg?param=50y50">
+									</div>
+									<div class="j-flag">
+										<div>
+											<div class="m-cmmtiptf-cbf-pr">
+												<div class="u-txtwrapholder-parentf-pr"
+													style="display: block;">
+													<textarea class="u-txtareaj-flag" data-type="0"
+														placeholder="评论" id="auto-id-Mz1tWmTkHwwrWfZ1"></textarea>
+												</div>
+												<div class="btnsf-cbf-pr">
+													<i class="icnu-icnu-icn-36j-flag"
+														id="auto-id-eFOpwWr3X4ViDyXw"></i><i
+														class="icnu-icnu-icn-41j-flag"
+														id="auto-id-UR85VvF2IGLx1ctb"></i><a
+														href="javascript:void(0)" class="btnu-btnu-btn-1j-flag"
+														id="auto-id-pOcqcLfJRWh8bBLO"><input type="button"
+														value="评论" /></a><span class="zss-fc4j-flag">140</span>
+												</div>
+												<div class="corru-arr">
+													<em class="arrline">◆</em><span class="arrclr">◆</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cmmtsj-flag" id="auto-id-5C7cGLaeencPADrT">
+									<h3 class="u-hd4">最新评论(1)</h3>
+									<div id="13621162171547889270684" class="itm"
+										data-id="1362116217">
+										<div class="head">
+											<a href="/user/home?id=1678894364"><img
+												src="https://p1.music.126.net/d2nWctg9ffhzacclvM9YvQ==/109951163680479224.jpg?param=50y50"></a>
+										</div>
+										<div class="cntwrap">
+											<div class="">
+												<div class="cntf-brk">
+													<a href="/user/home?id=1678894364" class="s-fc7">花落忆流年96</a>：非常广泛幸福感
+												</div>
+											</div>
+											<div class="rp">
+												<div class="times-fc4">刚刚</div>
+												<span class="dlt"><a href="javascript:void(0)"
+													class="s-fc3" data-id="1362116217" data-type="delete">删除</a><span
+													class="sep">|</span></span><a data-id="1362116217"
+													data-type="like" href="javascript:void(0)"><i
+													class="zanu-icn2u-icn2-12"></i></a><span class="sep">|</span><a
+													href="javascript:void(0)" class="s-fc3"
+													data-id="1362116217" data-type="reply">回复</a>
+													<span class="sep1">||</span><a
+													href="javascript:void(0)" class="s-fc4"
+													data-id="1362116217" data-type="reply">点赞</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cmmtsj-flag" id="auto-id-oGfZF2pKDgrhJ1TG"></div>
+								<div class="j-flag"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
